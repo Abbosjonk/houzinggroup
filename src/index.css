@@ -7,12 +7,13 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
-::root{
+:root{
   /* color */
   --colorPrimary:#0D263B;
   --colorSecondary:#696969;
 
   /* backround */
   --backroundPrimary:#0061DF;
-  
+  /* padding*/
+  --padding:0 130px;
 }
