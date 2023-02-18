@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {ReactComponent as logoImg} from '../../assets/icon/logo1.svg'
 
 export const Container=styled.div`
+
 `
 export const Wrapper =styled.div`
 background: var(--colorPrimary);
@@ -17,7 +18,10 @@ align-items: center;
 export const Section =styled.div`
  display: flex;
  align-items: center;
-
+ cursor: ${({logo})=>logo&&'pointer'};
+.active{
+  color: red;
+ }
 `
 export const Logo =styled(logoImg)`
  width: 30px;
@@ -31,4 +35,6 @@ export const Logo =styled(logoImg)`
  text-decoration: none;
  color: #ffff;
  padding: 0 30px;
+ 
+ 
  `

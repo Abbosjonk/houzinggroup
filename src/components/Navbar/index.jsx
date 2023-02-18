@@ -1,13 +1,14 @@
 import React from 'react'
-import {  Navigate, Outlet ,useNavigate} from 'react-router-dom';
+import {  Outlet ,useNavigate} from 'react-router-dom';
 import {Link, Container, Logo, Section, Wrapper } from './style'
 import {navbar} from '../../utils/navbar'
 
 export const Home = () => {
+  const navigate=useNavigate();
   return (
     <Container>
       <Wrapper>
-      <Section onClick={()=>Navigate('./home')}>
+      <Section logo onClick={()=>navigate('./home')}>
        <Logo/>
         <h3>Houzing</h3>
       </Section>
@@ -15,7 +16,7 @@ export const Home = () => {
        {
         navbar.map(({title,path},index)=>{
           return(
-            <Link key={index} to={path}>{title}</Link>
+            <Link className={({isActive})=>isActive&&'active'} key={index} to={path}>{title}</Link>
           )
         })
        }
