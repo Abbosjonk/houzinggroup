@@ -3,18 +3,29 @@ import HomePage from "../pages/Home";
 import { PropertiesPage } from "../pages/Properties";
 
 export const navbar=[
-  {id:useUniqueId,
+  {
+  id:useUniqueId,
   element:<HomePage/>,
   title:'Home',
   path:'/home',
   hidden:false,
-  private:false},
+  private:false
+},
 
-  {id:useUniqueId,
+  {
+  id:useUniqueId,
   element:<PropertiesPage/>,
   title:'Properties',
   path:'/properties',
   hidden:false,
-  private:false}
-
+  private:false
+},
+{
+  id:useUniqueId,
+  element:<h1>Sign In</h1>,
+  title:'sing| In',
+  path:'/singIn',
+  hidden:true,
+  private:false
+},
 ] 
