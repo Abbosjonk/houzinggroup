@@ -3,7 +3,7 @@ import { Container } from './style'
 
 export const Home = () => {
   return (
-    <Container>Home</Container>
+    <Container>Home 2</Container>
   )
 }
 export default Home;
